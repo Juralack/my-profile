@@ -3,11 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Profile - จุฬาลัษณ์ แสงผา</title>
+<title>ประวัติส่วนตัว | จุฬาลัษณ์ แสงผา</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap" rel="stylesheet">
 
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -16,7 +17,7 @@
 }
 
 body{
-    background:linear-gradient(135deg,#5b2c83,#8e44ad,#c39bd3);
+    background:linear-gradient(135deg,#7b2cbf,#9d4edd,#c77dff);
     min-height:100vh;
     display:flex;
     justify-content:center;
@@ -24,159 +25,202 @@ body{
     padding:30px;
 }
 
-.card{
-    width:900px;
-    max-width:100%;
-    background:rgba(255,255,255,.12);
-    backdrop-filter:blur(15px);
+.container{
+
+    width:100%;
+    max-width:950px;
+    background:white;
     border-radius:25px;
     overflow:hidden;
-    display:flex;
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+
+}
+
+.header{
+
+    background:linear-gradient(to right,#6a00f4,#9d4edd);
     color:white;
-    box-shadow:0 15px 40px rgba(0,0,0,.3);
+    text-align:center;
+    padding:35px;
+
+}
+
+.header h1{
+
+    font-size:42px;
+
+}
+
+.header p{
+
+    margin-top:10px;
+    font-size:20px;
+
+}
+
+.content{
+
+    display:grid;
+    grid-template-columns:320px 1fr;
+
 }
 
 .left{
-    width:35%;
-    background:rgba(255,255,255,.08);
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    padding:40px;
-}
 
-.avatar{
-    width:180px;
-    height:180px;
-    border-radius:50%;
-    background:white;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:90px;
-    color:#8e44ad;
-    margin-bottom:20px;
-}
-
-.left h1{
-    font-size:30px;
+    background:#f6ecff;
     text-align:center;
+    padding:30px;
+
 }
 
-.left h3{
-    font-weight:300;
-    margin-top:10px;
+.left img{
+
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:50%;
+    border:8px solid #9d4edd;
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+}
+
+.left h2{
+
+    margin-top:20px;
+    color:#6a00f4;
+
 }
 
 .right{
-    flex:1;
-    padding:50px;
-}
 
-.title{
-    font-size:35px;
-    margin-bottom:30px;
-    border-left:8px solid #fff;
-    padding-left:15px;
+    padding:40px;
+
 }
 
 .info{
-    margin-bottom:20px;
+
+    margin-bottom:18px;
+    padding:15px;
+    border-left:6px solid #9d4edd;
+    background:#faf7ff;
+    border-radius:10px;
+
 }
 
-.info h2{
-    font-size:22px;
-    margin-bottom:8px;
-    color:#f8d7ff;
+.info h3{
+
+    color:#6a00f4;
+    margin-bottom:5px;
+
 }
 
-.info p{
-    font-size:18px;
-    line-height:1.8;
+.favorite{
+
+    margin-top:30px;
+
 }
 
-.hobby{
-    margin-top:15px;
+.favorite img{
+
+    width:240px;
+    border-radius:20px;
+    margin-top:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+
 }
 
-.tag{
-    display:inline-block;
-    background:white;
-    color:#7d3c98;
-    padding:10px 18px;
-    border-radius:30px;
-    margin:5px;
-    font-weight:bold;
-}
+.footer{
 
-footer{
-    margin-top:40px;
+    background:#6a00f4;
+    color:white;
     text-align:center;
-    font-size:14px;
-    color:#eee;
+    padding:15px;
+    font-size:18px;
+
 }
 
-@media(max-width:768px){
+@media(max-width:800px){
 
-.card{
-    flex-direction:column;
-}
+.content{
 
-.left{
-    width:100%;
-}
+grid-template-columns:1fr;
 
-.right{
-    padding:30px;
-}
-
-.title{
-    font-size:28px;
 }
 
 }
+
 </style>
 
 </head>
+
 <body>
 
-<div class="card">
+<div class="container">
+
+<div class="header">
+
+<h1>ประวัติส่วนตัว</h1>
+
+<p>Personal Profile</p>
+
+</div>
+
+<div class="content">
 
 <div class="left">
 
-<div class="avatar">
-👩
+<img src="Profile.jpg" alt="Profile">
+
+<h2>จุฬาลัษณ์ แสงผา</h2>
+
+<p>"มีซีรีส์ไว้ฮีลใจ มีคอนเสิร์ตไว้เติมไฟให้ชีวิต"</p>
+
+
+<div class="info">
+<h3>👤 Email</h3>
+<p>gadgaew172542@gmail.com</p>
 </div>
 
-<h1>จุฬาลัษณ์ แสงผา</h1>
-<h3>Computer Engineering Student</h3>
 
-</div>
-
-<div class="right">
-
-<div class="title">
-✨ ประวัติส่วนตัว
+<div class="info">
+<h3>👤 ID Line</h3>
+<p>0968070963</p>
 </div>
 
 <div class="info">
-<h2>ชื่อ - นามสกุล</h2>
+<h3>👤 เบอร์ติดต่อ</h3>
+<p>0968070963</p>
+</div>
+
+
+
+</div>
+
+
+<div class="right">
+
+<div class="info">
+<h4>👤 ชื่อ</h3>
 <p>จุฬาลัษณ์ แสงผา</p>
 </div>
 
 <div class="info">
-<h2>ชื่อเล่น</h2>
+<h4>🌸 ชื่อเล่น</h3>
 <p>แก้ว</p>
 </div>
 
 <div class="info">
-<h2>วันเดือนปีเกิด</h2>
+<h4>🎂 อายุ</h3>
+<p>22 ปี</p>
+</div>
+
+<div class="info">
+<h4>📅 วันเกิด</h3>
 <p>10 พฤศจิกายน 2546</p>
 </div>
 
 <div class="info">
-<h2>กำลังศึกษา</h2>
+<h3>🎓 การศึกษา</h3>
 <p>
 มหาวิทยาลัยนครพนม<br>
 คณะวิศวกรรมศาสตร์<br>
@@ -184,17 +228,30 @@ footer{
 </p>
 </div>
 
-<div class="info hobby">
-<h2>สิ่งที่ชอบ ❤️</h2>
+<div class="info">
+<h4>❤️ สิ่งที่ชอบ</h3>
+<p>ชอบดูซีรีย์จีน และซีรีย์เกาหลี</p>
+</div>
 
-<span class="tag">🎬 ซีรีย์จีน</span>
-<span class="tag">🇰🇷 ซีรีย์เกาหลี</span>
+<div class="favorite">
+
+<h3 style="color:#b69fd5;">⭐ ดาราที่ชอบตอนนี้</h3>
+
+<p style="margin-top:10px;">
+เน็ต - เจเจ
+</p>
+
+<img src="netjj.jpg" alt="Net JJ">
 
 </div>
 
-<footer>
-Designed with 💜 Purple Theme
-</footer>
+</div>
+
+</div>
+
+<div class="footer">
+
+© 2026 เว็บไซต์ประวัติส่วนตัว | จุฬาลัษณ์ แสงผา
 
 </div>
 
